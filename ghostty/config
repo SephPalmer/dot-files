@@ -1,0 +1,13 @@
+theme = carbonfox
+
+# Enable or disable the path bar
+window-decoration = true
+
+background-opacity = 0.85
+cursor-opacity = 0.85
+background-blur = true
+cursor-color = #00ff33
+mouse-hide-while-typing = true
+command = /opt/homebrew/bin/nu
+
+
