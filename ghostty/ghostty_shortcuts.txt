@@ -1,0 +1,36 @@
+Ghostty
+
+Splits
+Command + d - new split right
+Command + shift + d - new split down
+Command + w - close split
+Command + ctrl + = - equalise splits
+Command + ctrl + up - resize split up
+Command + ctrl + down - resize split down
+Command + ctrl + left - resize split left
+Command + ctrl + right - resize split right
+Command + alt + up - goto_split:up
+Command + alt   + down - goto_split:down
+Command + alt   + right - goto_split:right
+Command + alt   + left - goto_split:left
+
+Font Size
+Command + minus - decrease_font_size:1
+Command + plus - increase_font_size:1
+Command + equal - increase_font_size:1
+Command + zero - reset_font_size
+
+Tabs
+Command + t - new tab
+Command + alt + w - close tab
+ctrl + tab - next tab
+
+Misc
+Command + comma - open_config
+Command + shift + comma - reload_config
+Command + enter - toggle_fullscreen
+Command + n - new_window
+Command + shift + w - close_window
+Command + page_up - scroll_page_up
+Command + page_down - scroll_page_down
+
