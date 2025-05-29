@@ -8,6 +8,7 @@ cursor-opacity = 0.85
 background-blur = true
 cursor-color = #00ff33
 mouse-hide-while-typing = true
-command = /opt/homebrew/bin/nu
+# command = /opt/homebrew/bin/nu
+
 
 
