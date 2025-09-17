@@ -1,14 +1,16 @@
-theme = carbonfox
-
-# Enable or disable the path bar
-window-decoration = true
-
-background-opacity = 0.85
+theme = Adventure Time
+custom-shader = shaders/cursor_blaze.glsl
+background-image = images/seascape-ai-image.png
+background-image-opacity = 0.255555
+background-image-position = center
+background-image-fit = cover
+background-opacity = 0.90
 cursor-opacity = 0.85
 background-blur = true
 cursor-color = #00ff33
 mouse-hide-while-typing = true
 # command = /opt/homebrew/bin/nu
 
+macos-titlebar-style = transparent
 
-
+keybind = shift+enter=text:\n
