@@ -3,6 +3,6 @@
   "model": "opus",
   "statusLine": {
     "type": "command",
-    "command": "input=$(cat); cwd=$(echo \"$input\" | jq -r '.workspace.current_dir'); git_branch=$(cd \"$cwd\" 2>/dev/null && git branch --show-current 2>/dev/null); time=$(date +%H:%M:%S); model_id=$(echo \"$input\" | jq -r '.model.id'); model_display=$(echo \"$model_id\" | sed -e 's/.*opus-4-1.*/Opus 4.1/' -e 's/.*sonnet.*/Sonnet/' -e 's/.*haiku.*/Haiku/' -e t -e 's/.*/Unknown/'); printf \"\\033[2m%s%s \\033[0m\\033[35m[%s]\\033[0m \\033[36m%s\\033[0m\" \"$(basename \"$cwd\")\" \"${git_branch:+ ($git_branch)}\" \"$model_display\" \"$time\""
+    "command": "input=$(cat); cwd=$(echo \"$input\" | jq -r '.workspace.current_dir'); git_branch=$(cd \"$cwd\" 2>/dev/null && git branch --show-current 2>/dev/null); time=$(date +%H:%M:%S); model_id=$(echo \"$input\" | jq -r '.model.id'); model_display=$(echo \"$model_id\" | sed -e 's/.*opus-4-1.*/Opus 4.1/' -e 's/.*sonnet.*/Sonnet/' -e 's/.*haiku.*/Haiku/' -e t -e 's/.*/Unknown/'); folder_icon=$(printf '\\xef\\x81\\xbc'); printf \"\\033[2m%s  %s%s \\033[0m\\033[35m[%s]\\033[0m \\033[36m%s\\033[0m\" \"$folder_icon\" \"$(basename \"$cwd\")\" \"${git_branch:+ ($git_branch)}\" \"$model_display\" \"$time\""
   }
 }
