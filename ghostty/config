@@ -1,4 +1,18 @@
 theme = Adventure Time
+
+
+unfocused-split-opacity = 0.38
+unfocused-split-fill = 000000
+background-opacity-cells = true
+
+# — Cursor feel —
+cursor-style = bar
+cursor-opacity = 0.85
+cursor-click-to-move = true
+
+# — Shell integration & safety —
+shell-integration = zsh
+
 custom-shader = shaders/cursor_blaze.glsl
 background-image = images/seascape-ai-image.png
 background-image-opacity = 0.255555
@@ -9,8 +23,6 @@ cursor-opacity = 0.85
 background-blur = true
 cursor-color = #00ff33
 mouse-hide-while-typing = true
-# command = /opt/homebrew/bin/nu
-
+command = /opt/homebrew/bin/tmux a -t Default
 macos-titlebar-style = transparent
-
 keybind = shift+enter=text:\n
