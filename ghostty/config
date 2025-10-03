@@ -1,6 +1,16 @@
 theme = Adventure Time
 
+# -- window decoration --
+window-decoration = auto
 
+# Use the left Option key as Alt/Meta (you can use: true | left | right)
+macos-option-as-alt = left
+
+# Remap the Option+Arrows to CSI with Alt modifier (1;3X)
+keybind = alt+arrow_left=csi:1;3D
+keybind = alt+arrow_right=csi:1;3C
+
+# -- opacity --
 unfocused-split-opacity = 0.38
 unfocused-split-fill = 000000
 background-opacity-cells = true
@@ -9,6 +19,7 @@ background-opacity-cells = true
 cursor-style = bar
 cursor-opacity = 0.85
 cursor-click-to-move = true
+cursor-color = #ffaa00
 
 # — Shell integration & safety —
 shell-integration = zsh
@@ -19,10 +30,8 @@ background-image-opacity = 0.255555
 background-image-position = center
 background-image-fit = cover
 background-opacity = 0.90
-cursor-opacity = 0.85
 background-blur = true
-cursor-color = #00ff33
 mouse-hide-while-typing = true
-command = /opt/homebrew/bin/tmux a -t Default
+initial-command = /opt/homebrew/bin/tmux a -t Default
 macos-titlebar-style = transparent
 keybind = shift+enter=text:\n
