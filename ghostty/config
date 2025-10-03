@@ -32,6 +32,6 @@ background-image-fit = cover
 background-opacity = 0.90
 background-blur = true
 mouse-hide-while-typing = true
-initial-command = /opt/homebrew/bin/tmux a -t Default
+initial-command = /opt/homebrew/bin/tmux new -A -s Default
 macos-titlebar-style = transparent
 keybind = shift+enter=text:\n
