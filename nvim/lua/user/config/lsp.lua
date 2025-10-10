@@ -18,7 +18,7 @@ return {
       "mason-org/mason.nvim",
     },
     opts = {
-      ensure_installed = { "lua_ls", "rust_analyzer" },
+      ensure_installed = { "lua_ls", "rust_analyzer", "kotlin_language_server" },
       automatic_installation = true,
     },
   },
@@ -91,9 +91,16 @@ return {
         },
       })
 
+      -- Configure kotlin_language_server
+      vim.lsp.config('kotlin_language_server', {
+        cmd = { 'kotlin-language-server' },
+        root_markers = { 'build.gradle', 'build.gradle.kts', 'settings.gradle', 'settings.gradle.kts' },
+      })
+
       -- Enable the servers
       vim.lsp.enable('rust_analyzer')
       vim.lsp.enable('lua_ls')
+      vim.lsp.enable('kotlin_language_server')
     end,
   },
 }

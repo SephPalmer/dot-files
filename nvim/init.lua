@@ -37,7 +37,13 @@ vim.keymap.set('n', '<leader>ff', function()
   })
 end)
 
+-- Telescope key remaps
 vim.keymap.set('n', '<leader>fl', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+-- General key remaps --
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
